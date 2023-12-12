@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script> 
   <script src="https://cdn.tailwindcss.com"></script>
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+
+<!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/EasePack.min.js"></script>
+
   <!-- Include Font Awesome for the mobile menu icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body class="bg-black">
 
-  <header class="fixed top-0 left-0 right-0 z-50 border-b md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4 bg-indigo-950 text-rose-100">
+  <header class="fixed top-0 left-0 right-0 z-50 border-b md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4 bg-black text-rose-100">
 
     <!-- Title -->
     <div class="flex items-center justify-between mb-4 md:mb-0 text-xl px-2">
@@ -31,7 +36,7 @@
     <nav>
       <ul class="list-reset md:flex md:items-center">
         <li class="md:ml-4 text-xl px-2">
-          <a class="block no-underline bg-rose-100 text-indigo-950 hover:underline py-2 text-grey-darkest hover:text-indigo-950 hover:bg-amber-100 md:border-none md:p-0" href="index.html">
+          <a class="p-2 block no-underline bg-rose-100 text-indigo-950 hover:underline py-2 text-grey-darkest hover:text-indigo-950 hover:bg-amber-100 md:border-none md:p-0" href="index.html">
             Home
           </a>
         </li>
@@ -69,9 +74,9 @@
 
   </section>
   
-  <footer class="bg-gray-800 text-white p-4">
+<footer class="bg-black text-white p-4">
     <!-- Your footer content goes here -->
-    <p>&copy; 2023 Your Company</p>
+    <p class="flex justify-center">&copy; 2023 Dorothy Nguyen</p>
 </footer>
 
   </body>

@@ -10,9 +10,9 @@
   <!-- Include Font Awesome for the mobile menu icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body class="bg-rose-100">
+<body class="bg-black">
 
-  <header class="fixed top-0 left-0 right-0 z-50 border-b md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4 bg-indigo-950 text-rose-100">
+  <header class="fixed top-0 left-0 right-0 z-50 border-b md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4 bg-black text-rose-100">
 
     <!-- Title -->
     <div class="flex items-center justify-between mb-4 md:mb-0 text-xl px-2">
@@ -51,13 +51,13 @@
     </nav>
   </header>
 
-  <div class="mt-20 p-4">
+  <div class="mt-20 p-4 w-screen h-screen">
 
-    <div class="border border-solid border-blue-500 p-4" id="password-form">
+    <div class="border border-solid border-blue-500 p-5 bg-gray-200 px-10 mx-10 flex flex justify-center gap-2" id="password-form">
       <input type="password" id="password-input" placeholder="Enter password">
-      <button id="toggle-button" onclick="togglePassword()">Show/Hide</button>
-      <button id="unlock-button" onclick="checkPassword()">Unlock</button>
-      <p id="error-message"></p>
+      <button class="text-white bg-gray-800 hover:bg-indigo-950 p-2" id="toggle-button" onclick="togglePassword()">Show/Hide</button>
+      <button class="text-white bg-gray-800 hover:bg-indigo-950 p-2" id="unlock-button" onclick="checkPassword()">Unlock</button>
+      <p class="text-red-600" id="error-message"></p>
     </div>
 
     <div id="content" class="hidden">
@@ -124,7 +124,7 @@
 
 <footer class="bg-gray-800 text-white p-4">
   <!-- Your footer content goes here -->
-  <p>&copy; 2023 Your Company</p>
+  <p class="flex justify-center">&copy; 2023 Dorothy Nguyen</p>
 </footer>
 </body>
 </html>
