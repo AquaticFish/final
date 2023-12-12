@@ -3,9 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+  <title>Home</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
   
-</body>
+  <!-- Include Font Awesome for the mobile menu icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="bg-black">
+
+  <header class="fixed top-0 left-0 right-0 z-50 border-b md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4 bg-indigo-950 text-rose-100">
+
+    <!-- Title -->
+    <div class="flex items-center justify-between mb-4 md:mb-0 text-xl px-2">
+      <h1 class="leading-none text-2xl text-grey-darkest">
+        <a class="no-underline text-grey-darkest hover:text-amber-100" href="index.html">
+          DN
+        </a>
+      </h1>
+
+      <a class="text-black hover:text-orange md:hidden" href="#">
+        <i class="fas fa-bars fa-2x"></i>
+      </a>
+    </div>
+
+    <!-- Nav Bar -->
+    <nav>
+      <ul class="list-reset md:flex md:items-center">
+        <li class="md:ml-4 text-xl px-2">
+          <a class="block no-underline bg-rose-100 text-indigo-950 hover:underline py-2 text-grey-darkest hover:text-indigo-950 hover:bg-amber-100 md:border-none md:p-0" href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li class="md:ml-4 text-xl px-2">
+          <a class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-amber-100 md:border-none md:p-0" href="about.html">
+            About
+          </a>
+        </li>
+
+        <li class="md:ml-4 text-xl px-2">
+          <a class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-amber-100 md:border-none md:p-0" href="gallery.html">
+            Gallery
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <img class="brightness-75 mx-auto bg-cover" src="./img/hero.png" alt="" />
+  <section class="absolute top-1/3 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-center text-white"
+  >
+    <div class="text-slate-50 col-start-1 row-start-1 z-10 text-7xl justify-self-end self-center">
+      <h1 class="text-8xl text-white pb-4 px-2 font-extrabold">
+        Checkout
+      </h1>
+      <p class="text-sm">A spine-chilling short film that explores the vulnerability of stepping into the unknown, where the mundane can transform into the macabre. As Emily grapples with her worst fears, the boundaries between reality and nightmare blur, leaving the audience questioning the true nature of the unsettling events that unfold in the once-ordinary grocery store.</p>
+
+      <p class="pt-9">Coming Soon</p>
+      <p class="pt-2 text-red-600">October 6</p>
+
+    </div>
+
+
+  </section>
+  
+  <footer class="bg-gray-800 text-white p-4">
+    <!-- Your footer content goes here -->
+    <p>&copy; 2023 Your Company</p>
+</footer>
+
+  </body>
 </html>
